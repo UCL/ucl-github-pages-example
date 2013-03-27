@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en-US">
+<head>
+
+<title>{{page.title}}</title>
+
+{% include styles.html %}
+
+<meta name="description" lang="en-UK" content="*" />
+<meta name="keywords" lang="en-UK" content="*" />
+ 
+</head>
+<body>
+<div class="page_margins">
+	<!-- Graphic Border - Begin Part 1 -->
+	<div id="border-top">
+
+		<div id="edge-tl"> </div>
+		<div id="edge-tr"> </div>
+	</div>
+	<!-- Graphic Border - End Part 1 -->
+	<div class="page">    
+
+    {% include header.html %}
+		
+		<div id="main">
+			<div>
+				<div id="col1">
+					<div id="col1_content">
+					  <ul class="vlist">        
+  					{% for page in site.pages %}
+  					<li><a href="{{page.url}}">{{page.title}}</a></li>
+  					{% endfor %}
+  		 			<p></p>
+						</ul>
+					</div>
+
+				</div>
+
+				<div id="col3">
+					<div id="col3_content" class="clearfix"> <a id="content" name="content"></a>				
+            {{content}}
+					<div id="ie_clearing">&nbsp;</div>
+					<!-- End: IE Column Clearing -->	
+				</div>
+
+
+			</div>
+		</div>
+		<!-- end: #main -->
+      
+      
+  {% include footer.html %}
+	</div>
+		
+	<!-- Graphic Border - Begin Part 2 -->
+	<div id="border-bottom">
+		<div id="edge-bl"> </div>
+		<div id="edge-br"> </div>
+
+	</div>
+	<!-- Graphic Border - End Part 2 -->
+</div>
+
+</body>
+</html>

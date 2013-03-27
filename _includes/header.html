@@ -1,0 +1,35 @@
+<div id="header" class="tb-dark_grey">
+	<div id="topnav">
+	<!-- start: skip link navigation -->
+
+		<a class="skip" href="#navigation" title="skip link">skip to navigation</a><span class="hideme">.</span>
+		<a class="skip" href="#content" title="skip link">skip to content</a><span class="hideme">.</span>
+	<!-- end: skip link navigation -->
+	</div> 
+
+  <h1 class="section_header_white">{{page.title}}</h1>
+  
+  <span class="section_subheader_white">{{page.subtitle}}</span>
+
+	<div id="logo_holder"> 
+		<a href="/"><img src="../images/ci/corp-identity-mid-green.gif" alt="UCL Home" /></a>
+	</div>
+	
+</div>
+
+
+<!-- Begin breadcrumbs row -->
+<div id="nav" class="noprint">
+	<div class="hlist" id="corp-identity-mid-green">
+	   
+		<!-- Start Breadcrumbs-->
+		<ul id="bcpadding">	
+			{% for crumb in page.categories %}
+			<li><a href="/">{{crumb}}</a></li>
+			{% endfor %} 		
+		</ul>
+		<!--End Breadcrumbs-->
+
+	</div>
+</div>
+<!--End Breadcrumbs row-->
