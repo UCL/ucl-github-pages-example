@@ -1,7 +1,7 @@
 ---
 layout: default
 title: UCL Research Software Development
-subtitle: Readable, Reliable, Efficient Research Softwar
+subtitle: Readable, Reliable, Efficient Research Software
 ---
 
 Here is some markdown content in UCL style.
