@@ -1,8 +1,7 @@
 ---
 layout: default
-tags: [example, tag1, tag2]
 title: UCL Research Software Development
-subtitle: Example of GitHub pages with UCL Style
+subtitle: Readable, Reliable, Efficient Research Softwar
 ---
 
 Here is some markdown content in UCL style.
